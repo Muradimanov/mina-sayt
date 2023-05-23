@@ -1,0 +1,1511 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+nav .nav_logo .fa-bars {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  margin-right: 30px;
+}
+nav .nav_logo .fa-x {
+  color: rgb(0, 0, 0);
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+nav .nav_logo .navbar_fixed {
+  width: 100%;
+  height: 30vh;
+  position: fixed;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 80px;
+  display: none;
+  opacity: 0.9;
+}
+nav .nav_logo .navbar_fixed ul li {
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+nav .nav_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+nav .nav_section .nav_res1 {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+nav .nav_section .nav_res1 a {
+  font-size: 30px;
+  text-decoration: none;
+}
+nav .nav_section .nav_res1 i {
+  background-color: #fff;
+  transform: rotate(0deg);
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 100%;
+}
+nav .nav_section .nav_res1 .droptown {
+  display: none;
+}
+nav .nav_section .nav_res1 a:hover {
+  text-decoration: underline;
+}
+nav .nav_section .nav_res1 a:hover i {
+  transform: rotate(-180deg);
+  transition: 0.5s;
+  text-decoration: none;
+}
+nav .nav_section a {
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+  font-style: bold;
+  display: flex;
+  flex-direction: row;
+}
+nav .nav_section a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 760px) {
+  nav .nav_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .nav_logo .fa-bars {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    margin-right: 30px;
+  }
+  nav .nav_logo .fa-x {
+    color: rgb(0, 0, 0);
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  nav .nav_logo .navbar_fixed {
+    width: 100%;
+    height: 40vh;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 80px;
+    display: none;
+    opacity: 0.9;
+  }
+  nav .nav_logo .navbar_fixed ul {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  nav .nav_logo .navbar_fixed ul li {
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 15PX;
+    right: 0;
+  }
+  nav .nav_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .nav_section .nav_res1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  nav .nav_section a {
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+    font-style: bold;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#aboutandicon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+#aboutandicon .forsusta:hover {
+  text-decoration: underline;
+}
+#aboutandicon .sustaclasi {
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  padding: 0px;
+  height: 0;
+  overflow: hidden;
+  margin-top: 5px;
+}
+#aboutandicon:hover .sustaclasi {
+  padding: 10px;
+  height: auto;
+  overflow: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .son {
+  width: 80%;
+}
+footer .son .son_noqte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .son .son_noqte img {
+  width: 70px;
+}
+footer .son .son_noqte ul {
+  display: flex;
+  flex-direction: row;
+}
+footer .son .son_noqte ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer .son .son_noqte ul li a {
+  text-decoration: underline;
+}
+footer .son .icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+footer .son .icon i {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 760px) {
+  footer {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .son {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .son .son_noqte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .son .son_noqte img {
+    width: 150px;
+  }
+  footer .son .son_noqte ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .son .son_noqte ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  footer .son .son_noqte ul li a {
+    text-decoration: underline;
+  }
+  footer .son .icon {
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  footer .son .icon i {
+    font-size: 30px;
+  }
+}
+.ilk_hisse {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Rectangle-YZ9P6kWjMnUBNL6W.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.ilk_hisse .basliq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.ilk_hisse .basliq h1 {
+  font-size: 85px;
+  color: white;
+}
+.ilk_hisse .basliq h3 {
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.ilk_hisse .basliq button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+}
+.ilk_hisse .basliq button:hover {
+  background-color: rgb(194, 193, 192);
+}
+
+@media only screen and (max-width: 760px) {
+  .basliq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .basliq h1 {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+  }
+  .basliq h3 {
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .basliq button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+  }
+  .basliq button:hover {
+    background-color: rgb(194, 193, 192);
+  }
+}
+.bestsellers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bestsellers h2 {
+  font-size: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: rgb(78, 3, 78);
+}
+.bestsellers .cards {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.bestsellers .cards .card {
+  flex-wrap: nowrap;
+  width: 25%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bestsellers .cards .card h5 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(78, 3, 78);
+}
+.bestsellers .cards .card p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: rgb(78, 3, 78);
+}
+.bestsellers button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border-color: rgb(78, 3, 78);
+  margin-bottom: 40px;
+  border: 0;
+  cursor: pointer;
+}
+.bestsellers button:hover {
+  background-color: rgb(194, 193, 192);
+}
+
+@media only screen and (max-width: 760px) {
+  .bestsellers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bestsellers h2 {
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    color: rgb(78, 3, 78);
+  }
+  .bestsellers .cards {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bestsellers .cards .card {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bestsellers .cards .card h5 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(78, 3, 78);
+  }
+  .bestsellers .cards .card p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(78, 3, 78);
+  }
+}
+.decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Untitled-AzGRJwMK6BHxZypJ.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.decor h1 {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
+.decor p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+.decor button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  color: rgb(78, 3, 78);
+  border: 0;
+  cursor: pointer;
+}
+.decor button:hover {
+  background-color: rgb(194, 193, 192);
+}
+
+.about_card {
+  padding-top: 80px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.about_card .ab_card img {
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.about_card .ab_card h4 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(78, 3, 78);
+}
+.about_card .ab_card p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: rgb(78, 3, 78);
+}
+.about_card .ab_card button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border-color: rgb(78, 3, 78);
+  cursor: pointer;
+}
+.about_card .ab_card button:hover {
+  background-color: rgb(194, 193, 192);
+}
+
+@media only screen and (max-width: 760px) {
+  .about_card {
+    padding-top: 80px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .about_card .ab_card {
+    max-width: 450px;
+  }
+  .about_card .ab_card img {
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+  .about_card .ab_card h4 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(78, 3, 78);
+  }
+  .about_card .ab_card p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(78, 3, 78);
+  }
+  .about_card .ab_card button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-color: rgb(78, 3, 78);
+    cursor: pointer;
+    border: 0;
+  }
+  .about_card .ab_card button:hover {
+    background-color: rgb(194, 193, 192);
+  }
+}
+.sign_up {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-AGBpDkZaG5cRpbaw.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.sign_up h1 {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 40px;
+}
+.sign_up input {
+  width: 300px;
+  height: 50px;
+  opacity: 0.8;
+  border: 0;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+.sign_up button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+.sign_up button:hover {
+  background-color: rgb(194, 193, 192);
+}
+
+@media only screen and (max-width: 760px) {
+  .sign_up {
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-AGBpDkZaG5cRpbaw.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .sign_up h1 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .sign_up input {
+    width: 300px;
+    height: 50px;
+    opacity: 0.8;
+    border: 0;
+    margin-bottom: 30px;
+  }
+  .sign_up button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .sign_up button:hover {
+    background-color: rgb(194, 193, 192);
+  }
+}
+.follow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.follow h1 {
+  font-size: 80px;
+  color: rgb(78, 3, 78);
+  margin-top: 50px;
+  text-align: center;
+}
+.follow .sekiller {
+  display: flex;
+  flex-direction: row;
+}
+.follow .sekiller img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 33%;
+  padding: 20px;
+}
+.follow a {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 760px) {
+  .follow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .follow h1 {
+    font-size: 55px;
+    color: rgb(78, 3, 78);
+    margin-top: 50px;
+  }
+  .follow .sekiller {
+    display: flex;
+    flex-direction: column;
+  }
+  .follow .sekiller img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+  }
+  .follow a {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+.section_header {
+  width: 100%;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/dd-d95eByKQX2CoQJ4L.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 66vh;
+}
+.section_header h2 {
+  text-align: center;
+  padding-top: 180px;
+  color: #fff;
+  font-size: 80px;
+}
+
+.shop_card_section {
+  width: 100%;
+  margin: 50px 0;
+}
+.shop_card_section .linkler {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+.shop_card_section .linkler .l1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.shop_card_section .linkler .l1:hover {
+  color: rgb(60, 60, 150);
+}
+.shop_card_section .linkler .l1 a {
+  color: rgb(95, 95, 102);
+  margin-top: 10px;
+}
+.shop_card_section .linkler .l1 a:hover {
+  color: rgb(60, 60, 150);
+}
+.shop_card_section .linkler .l2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.shop_card_section .linkler .l2:hover {
+  color: rgb(60, 60, 150);
+}
+.shop_card_section .linkler .l2 a {
+  color: rgb(95, 95, 102);
+  margin-top: 10px;
+}
+.shop_card_section .linkler .l2 a:hover {
+  color: rgb(60, 60, 150);
+}
+.shop_card_section .icon_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1600px;
+  margin-bottom: 10px;
+}
+.shop_card_section .icon_link a {
+  color: rgb(95, 95, 102);
+}
+.shop_card_section .icon_link a:hover {
+  color: rgb(60, 60, 150);
+}
+.shop_card_section .icon_link a i {
+  margin-left: 7px;
+  margin-right: 5px;
+}
+.shop_card_section .shop_card {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.shop_card_section .shop_card .card {
+  width: 386px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.shop_card_section .shop_card .card .card_img {
+  width: 386px;
+  height: 386px;
+  overflow: hidden;
+}
+.shop_card_section .shop_card .card .card_img img {
+  width: 386px;
+  height: 386px;
+  transition: all 1.8s;
+}
+.shop_card_section .shop_card .card .card_img img:hover {
+  transform: scale(1.2);
+}
+.shop_card_section .shop_card .card h3 {
+  font-size: 30px;
+}
+.shop_card_section .shop_card .card p {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .shop_card_section .shop_card {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about_main {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/minattnvs/Frame-YanWlX24wOIg2vwL.png");
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.about_main h1 {
+  font-size: 90px;
+  color: white;
+}
+
+.ab_basliq {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+}
+.ab_basliq p {
+  font-size: 30px;
+  width: 555px;
+  text-align: center;
+  color: rgb(78, 3, 78);
+}
+
+.friends {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgb(205, 205, 205);
+}
+.friends .f2 h2 {
+  font-size: 40px;
+  color: rgb(78, 3, 78);
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.friends .f2 p {
+  font-size: 20px;
+  max-width: 500px;
+  color: rgb(78, 3, 78);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sustainability {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgb(255, 163, 50);
+}
+.sustainability .s2 h2 {
+  font-size: 40px;
+  color: rgb(78, 3, 78);
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.sustainability .s2 p {
+  font-size: 20px;
+  max-width: 500px;
+  color: rgb(78, 3, 78);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sustainability .s2 button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  border: 0;
+  cursor: pointer;
+}
+.sustainability .s2 button:hover {
+  background-color: rgb(194, 193, 192);
+}
+
+@media only screen and (max-width: 760px) {
+  .about_main {
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/minattnvs/Frame-YanWlX24wOIg2vwL.png");
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .about_main h1 {
+    font-size: 90px;
+    color: white;
+  }
+  .ab_basliq {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 40vh;
+  }
+  .ab_basliq p {
+    font-size: 30px;
+    width: 555px;
+    text-align: center;
+    color: rgb(78, 3, 78);
+  }
+  .friends {
+    background-color: rgb(205, 205, 205);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .friends .f1 img {
+    max-width: 450px;
+    width: 100%;
+  }
+  .friends .f2 h2 {
+    font-size: 40px;
+    color: rgb(78, 3, 78);
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .friends .f2 p {
+    font-size: 20px;
+    max-width: 500px;
+    color: rgb(78, 3, 78);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .sustainability {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 163, 50);
+    align-items: center;
+  }
+  .sustainability .s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sustainability .s2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sustainability .s2 h2 {
+    font-size: 40px;
+    color: rgb(78, 3, 78);
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .sustainability .s2 p {
+    font-size: 20px;
+    max-width: 500px;
+    color: rgb(78, 3, 78);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .sustainability .s2 button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    border: 0;
+    cursor: pointer;
+  }
+  .sustainability .s2 button:hover {
+    background-color: rgb(194, 193, 192);
+  }
+}
+.contact {
+  width: 100%;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/kk-AVLnvEyZ8ehlnGNB.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 49vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.imput_main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.imput_main .input_basliq {
+  max-width: 100%;
+}
+.imput_main .input_basliq h3 {
+  font-size: 40px;
+  color: rgb(78, 3, 78);
+  margin-bottom: 20px;
+}
+.imput_main .input_basliq p {
+  color: rgb(78, 3, 78);
+  margin-bottom: 8px;
+  width: 180px;
+}
+.imput_main .input_basliq .im1 {
+  margin-bottom: 80px;
+}
+.imput_main .inputs {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imput_main .inputs h3 {
+  margin-bottom: 30px;
+  color: rgb(78, 3, 78);
+}
+.imput_main .inputs input {
+  width: 300px;
+  height: 50px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  z-index: 1;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(226, 228, 230);
+}
+.imput_main .inputs button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  color: rgb(78, 3, 78);
+  margin-bottom: 40px;
+  border-color: rgb(78, 3, 78);
+  cursor: pointer;
+}
+.imput_main .inputs button:hover {
+  background-color: rgb(78, 3, 78);
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 760px) {
+  .contact {
+    width: 100%;
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/kk-AVLnvEyZ8ehlnGNB.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 49vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact h1 {
+    font-size: 60px;
+    color: white;
+  }
+  .imput_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .imput_main .input_basliq {
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  .imput_main .input_basliq h3 {
+    font-size: 40px;
+    color: rgb(78, 3, 78);
+    margin-bottom: 20px;
+  }
+  .imput_main .input_basliq p {
+    color: rgb(78, 3, 78);
+    margin-bottom: 8px;
+    width: 180px;
+  }
+  .imput_main .input_basliq .im1 {
+    margin-bottom: 80px;
+  }
+  .imput_main .inputs {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .imput_main .inputs h3 {
+    margin-bottom: 30px;
+    color: rgb(78, 3, 78);
+  }
+  .imput_main .inputs input {
+    width: 250px;
+    height: 50px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    z-index: 1;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(226, 228, 230);
+  }
+  .imput_main .inputs button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(78, 3, 78);
+    margin-bottom: 40px;
+    border-color: rgb(78, 3, 78);
+    cursor: pointer;
+  }
+  .imput_main .inputs button:hover {
+    background-color: rgb(78, 3, 78);
+    color: rgb(255, 255, 255);
+  }
+}
+.shop_main {
+  width: 100%;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/dd-d95eByKQX2CoQJ4L.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 66vh;
+}
+.shop_main h1 {
+  text-align: center;
+  padding-top: 180px;
+  color: #fff;
+  font-size: 80px;
+}
+
+.card_section {
+  width: 100%;
+  margin-top: 100px;
+  height: 100vh;
+}
+.card_section .linkler {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+.card_section .linkler .l1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.card_section .linkler .l1:hover {
+  color: rgb(60, 60, 150);
+}
+.card_section .linkler .l1 a {
+  color: rgb(95, 95, 102);
+  margin-top: 10px;
+}
+.card_section .linkler .l1 a:hover {
+  color: rgb(60, 60, 150);
+}
+.card_section .linkler .l2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.card_section .linkler .l2:hover {
+  color: rgb(60, 60, 150);
+}
+.card_section .linkler .l2 a {
+  color: rgb(95, 95, 102);
+  margin-top: 10px;
+}
+.card_section .linkler .l2 a:hover {
+  color: rgb(60, 60, 150);
+}
+.card_section .link_alt {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: flex-start;
+}
+.card_section .link_alt .tire_kecid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.card_section .link_alt .tire_kecid a,
+.card_section .link_alt .tire_kecid p {
+  font-size: 17px;
+  margin: 5px 5px 5px 0;
+  color: rgb(159, 159, 159);
+}
+.card_section .satis_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_section .satis_div button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  color: rgb(78, 3, 78);
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border-color: rgb(78, 3, 78);
+  cursor: pointer;
+}
+.card_section .satis_div button:hover {
+  background-color: rgb(78, 3, 78);
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 760px) {
+  .shop_main {
+    width: 100%;
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/dd-d95eByKQX2CoQJ4L.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 66vh;
+  }
+  .shop_main h1 {
+    text-align: center;
+    padding-top: 180px;
+    color: #fff;
+    font-size: 80px;
+  }
+  .card_section {
+    width: 100%;
+    margin-top: 100px;
+    height: 100vh;
+  }
+  .card_section .linkler {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+  .card_section .linkler .l1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .card_section .linkler .l1:hover {
+    color: rgb(60, 60, 150);
+  }
+  .card_section .linkler .l1 a {
+    color: rgb(95, 95, 102);
+    margin-top: 10px;
+  }
+  .card_section .linkler .l1 a:hover {
+    color: rgb(60, 60, 150);
+  }
+  .card_section .linkler .l2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .card_section .linkler .l2:hover {
+    color: rgb(60, 60, 150);
+  }
+  .card_section .linkler .l2 a {
+    color: rgb(95, 95, 102);
+    margin-top: 10px;
+  }
+  .card_section .linkler .l2 a:hover {
+    color: rgb(60, 60, 150);
+  }
+  .card_section .link_alt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: flex-start;
+  }
+  .card_section .link_alt .tire_kecid {
+    display: flex;
+    flex-direction: row;
+  }
+  .card_section .link_alt .tire_kecid a,
+.card_section .link_alt .tire_kecid p {
+    font-size: 17px;
+    margin: 5px 5px 5px 0;
+    color: rgb(159, 159, 159);
+  }
+  .card_section .satis_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card_section .satis_div button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(78, 3, 78);
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-color: rgb(78, 3, 78);
+    cursor: pointer;
+  }
+  .card_section .satis_div button:hover {
+    background-color: rgb(78, 3, 78);
+    color: rgb(255, 255, 255);
+  }
+}
+.sustainabilityy {
+  width: 100%;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-m6LKEnXEpDfX8lgk.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 49vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sustainabilityy h1 {
+  font-size: 80px;
+  color: white;
+}
+
+.sus_basliq {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+}
+.sus_basliq p {
+  font-size: 30px;
+  width: 555px;
+  text-align: center;
+  color: rgb(78, 3, 78);
+}
+
+.ethos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgb(205, 205, 205);
+}
+.ethos .e2 h2 {
+  font-size: 40px;
+  color: rgb(78, 3, 78);
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.ethos .e2 p {
+  font-size: 20px;
+  max-width: 500px;
+  color: rgb(78, 3, 78);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.materials {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgb(228, 128, 6);
+}
+.materials .m2 h2 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.materials .m2 p {
+  font-size: 20px;
+  max-width: 500px;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 760px) {
+  .sustainability {
+    width: 100%;
+    height: 75vh;
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-m6LKEnXEpDfX8lgk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 49vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .sustainability h1 {
+    font-size: 90px;
+    color: white;
+  }
+  .sus_basliq {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 40vh;
+  }
+  .sus_basliq p {
+    font-size: 30px;
+    width: 555px;
+    text-align: center;
+    color: rgb(78, 3, 78);
+  }
+  .ethos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(205, 205, 205);
+  }
+  .ethos .e1 img {
+    max-width: 450px;
+    width: 100%;
+  }
+  .ethos .e2 h2 {
+    font-size: 40px;
+    color: rgb(78, 3, 78);
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .ethos .e2 p {
+    font-size: 20px;
+    max-width: 500px;
+    color: rgb(78, 3, 78);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .materials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 128, 6);
+  }
+  .materials .m1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .materials .m2 {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .materials .m2 h2 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .materials .m2 p {
+    font-size: 20px;
+    max-width: 500px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sustainability h1 {
+    font-size: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
